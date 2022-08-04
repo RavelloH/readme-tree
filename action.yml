@@ -31,6 +31,6 @@ runs:
   steps:
     - run: rm -rf .git/
       shell: bash
-      if: (( $ignoregit == 'yes' ))
+      if: ${{ inputs.ignoregit == 'yes' }}
     - run: tree -a
       shell: bash
