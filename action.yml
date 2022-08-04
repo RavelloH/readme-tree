@@ -32,6 +32,8 @@ runs:
     - run: rm -rf .git/
       shell: bash
       if: ${{ inputs.ignoregit == 'yes' }}
-    - run: tree -a
+    - run: |
+        if (( inputs.showall == 'yes' ));then tree -a ;else echo "over" ;fi
+  
       shell: bash
       if: ${{ inputs.showall == 'yes' && inputs.showdirectoryname == 'no' && inputs.showchangetime == 'no' && inputs.showsize == 'no' && inputs.showallname == 'no' }}
