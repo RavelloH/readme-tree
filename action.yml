@@ -2,23 +2,23 @@ name: "Readme Tree"
 description: "Automatically add the file structure tree to the corresponding position of your readme document."
 author: "RavelloH"
 inputs:
-  show-all:
+  showall:
     required: false
     description: "Show all files and directories(yes or no)"
     default: "no"
-  show-directory-name:
+  showdirectoryname:
     required: false
     description: "Show directory name instead of content(yes or no)"
     default: "no"
-  show-change-time:
+  showchangetime:
     required: false
     description: "List the change time of the file or directory(yes or no)"
     default: "no"
-  show-size:
+  showsize:
     required: false
     description: "Lists the file or directory size(yes or no)"
     default: "no"
-  show-all-name:
+  showallname:
     required: false
     description: "Displays the full relative path of the file(yes or no)"
     default: "no"
