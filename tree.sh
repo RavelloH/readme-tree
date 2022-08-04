@@ -1,3 +1,1 @@
-
-tree
-echo "$showall"
+echo "hello world"
