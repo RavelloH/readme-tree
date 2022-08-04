@@ -24,7 +24,7 @@ inputs:
     default: "no"
   ignoregit:
     required: false
-    description: "Ignore.Git folder"
+    description: "Ignore.Git folder(yes or no)"
     default: "yes"
 runs:
   using: "composite"
@@ -84,7 +84,7 @@ runs:
                     line2 = file.readline()
                     counts2 += 1
             print(counts2)
-            #os.remove("tree.bak")
+            os.remove("tree.bak")
         newcounts = counts-1
         newcounts2= counts2-1
         linelist = []
