@@ -33,7 +33,7 @@ runs:
       shell: bash
       if: ${{ inputs.ignoregit == 'yes' }}
     - run: |
-        if (( ${{inputs.showall}} == 'yes' ));then showall="-a " ;else showall="" ;fi
+        if (( ${{inputs.showall}} == 'yes' ));then showall="" ;else showall="-a " ;fi
         if (( ${{inputs.showdirectoryname}} == 'yes' ));then showdirectoryname="-d " ;else showdirectoryname="" ;fi
         if (( ${{inputs.showchangetime}} == 'yes' ));then showchangetime="-D " ;else showchangetime="" ;fi
         if (( ${{inputs.showsize}} == 'yes' ));then showsize="-s " ;else showsize="" ;fi
