@@ -34,3 +34,4 @@ runs:
       if: ${{ inputs.ignoregit == 'yes' }}
     - run: tree -a
       shell: bash
+      if: ${{ inputs.showall == 'yes' && inputs.showdirectoryname == 'no' && inputs.showchangetime == 'no' && inputs.showsize == 'no' && inputs.showallname == 'no' }}
