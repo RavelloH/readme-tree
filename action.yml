@@ -29,10 +29,6 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: 'Set up Python'
-      uses: actions/setup-python@v1
-      with:
-        python-version: 3.7 #v3
     - name: git ignore
       run: rm -rf .git/
       shell: bash
@@ -48,8 +44,5 @@ runs:
   
       shell: bash
     - name: Add to readme
-      run: python main.py
-      shell: cmd
-    - name: Tree
-      run: start tree.sh
-      shell: cmd
+      run: print('这tm怎么引用不了仓库里的文件')
+      shell: python
