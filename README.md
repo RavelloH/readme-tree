@@ -4,16 +4,13 @@
 <!-- readme-tree start -->
 ```
 .
-├── .github
-│   └── workflows
-│       └── main.yml
 ├── README.md
 ├── action.yml
 ├── main.py
 ├── tree.bak
 └── tree.sh
 
-2 directories, 6 files
+0 directories, 5 files
 ```
 <!-- readme-tree end -->
 ## 效果:
