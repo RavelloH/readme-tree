@@ -25,9 +25,5 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: inspect.py
-      shell: python
     - run: tree.sh
       shell: bash
-    - run: main.py
-      shell: python
