@@ -48,6 +48,19 @@
 └── .github
 1 directories
 ```
-### 显示更改时间
 ### 显示文件大小
+```
+.
+├── [       4096]  .github
+│   └── [       4096]  workflows
+│       └── [        591]  main.yml
+├── [       1018]  README.md
+├── [       4067]  action.yml
+├── [       1677]  main.py
+├── [          0]  tree.bak
+└── [        809]  tree.sh
+
+2 directories, 6 files
+```
+<!-- readme-tree end -->
 ### 显示相对路径
