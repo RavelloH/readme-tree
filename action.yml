@@ -22,8 +22,15 @@ inputs:
     required: false
     description: "Displays the full relative path of the file(yes or no)"
     default: "no"
+  ignoregit:
+    required: false
+    description: "Ignore.Git folder"
+    default: "yes"
 runs:
   using: "composite"
   steps:
+    - run: rm -rf .git/
+      shell: bash
+      if: ${{ $ignoregit == 'yes' }}
     - run: tree -a
       shell: bash
