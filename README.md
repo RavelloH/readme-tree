@@ -4,66 +4,6 @@
 <!-- readme-tree start -->
 ```
 .
-├── .git
-│   ├── FETCH_HEAD
-│   ├── HEAD
-│   ├── branches
-│   ├── config
-│   ├── description
-│   ├── hooks
-│   │   ├── applypatch-msg.sample
-│   │   ├── commit-msg.sample
-│   │   ├── fsmonitor-watchman.sample
-│   │   ├── post-update.sample
-│   │   ├── pre-applypatch.sample
-│   │   ├── pre-commit.sample
-│   │   ├── pre-merge-commit.sample
-│   │   ├── pre-push.sample
-│   │   ├── pre-rebase.sample
-│   │   ├── pre-receive.sample
-│   │   ├── prepare-commit-msg.sample
-│   │   ├── push-to-checkout.sample
-│   │   └── update.sample
-│   ├── index
-│   ├── info
-│   │   └── exclude
-│   ├── logs
-│   │   ├── HEAD
-│   │   └── refs
-│   │       ├── heads
-│   │       │   └── main
-│   │       └── remotes
-│   │           └── origin
-│   │               └── main
-│   ├── objects
-│   │   ├── 2b
-│   │   │   └── 3938f6ab4c8894ed834ca8f0e6c003979881fa
-│   │   ├── 32
-│   │   │   └── 91e7de4715c57b39dd04cda52b7fd42f9f3fb7
-│   │   ├── 3c
-│   │   │   └── 00233aaca2704ff5eb8b59ea5d3cb00bf4a170
-│   │   ├── 61
-│   │   │   └── 365f6c6bf64e9e8b5a81f2d6161b29f30e3ac0
-│   │   ├── 93
-│   │   │   └── cb9b7c5a3a5e0e3c36152b091bf9f84f9fc60e
-│   │   ├── a8
-│   │   │   └── f1ae8ac683dfe3db0d64563c4a4f16a9e9fbd7
-│   │   ├── bc
-│   │   │   └── fcd82886eb8f9ae9e1c95337f6a3a12f767e8a
-│   │   ├── bf
-│   │   │   └── a8b87102f67ff125f87ef1b8f20eaeb2601e75
-│   │   ├── d5
-│   │   │   └── 86916897be6eb7b9f58b6507c4ccf9696ab239
-│   │   ├── info
-│   │   └── pack
-│   ├── refs
-│   │   ├── heads
-│   │   │   └── main
-│   │   ├── remotes
-│   │   │   └── origin
-│   │   │       └── main
-│   │   └── tags
-│   └── shallow
 ├── .github
 │   └── workflows
 │       └── main.yml
@@ -73,7 +13,7 @@
 ├── tree.bak
 └── tree.sh
 
-28 directories, 40 files
+2 directories, 6 files
 ```
 <!-- readme-tree end -->
 ## 效果:
