@@ -62,5 +62,17 @@
 
 2 directories, 6 files
 ```
-<!-- readme-tree end -->
 ### 显示相对路径
+```
+.
+├── ./.github
+│   └── ./.github/workflows
+│       └── ./.github/workflows/main.yml
+├── ./README.md
+├── ./action.yml
+├── ./main.py
+├── ./tree.bak
+└── ./tree.sh
+
+2 directories, 6 files
+```
