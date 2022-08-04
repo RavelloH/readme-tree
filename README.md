@@ -18,7 +18,11 @@
 <!-- readme-tree end -->
 ## 效果:
 > 注:以下多种效果可组合使用
+ <details open>
+  <summary align="center"> <b> 显示/隐藏 </b> </summary>
+  
 ### 默认
+
 ```
 .
 ├── .github
@@ -31,7 +35,9 @@
 
 2 directories, 5 files
 ```
+
 ### 仅显示当前目录中的文件
+
 ```
 .
 ├── README.md
@@ -42,7 +48,9 @@
 
 0 directories, 5 files
 ```
+
 ### 仅显示目录名
+
 ```
 .
 └── .github
@@ -50,7 +58,9 @@
     
 2 directories
 ```
+
 ### 显示文件大小
+
 ```
 .
 ├── [       4096]  .github
@@ -64,7 +74,9 @@
 
 2 directories, 6 files
 ```
+
 ### 显示相对路径
+
 ```
 .
 ├── ./.github
@@ -78,7 +90,9 @@
 
 2 directories, 6 files
 ```
+
 ### 显示git文件
+
  <details>
   <summary align="center"> <b> 展开 </b> </summary>
     
@@ -156,4 +170,56 @@
 28 directories, 40 files
 ```
     
-  <details>
+  </details>
+</details>
+
+## 使用  
+### 快速开始  
+1.将以下代码加入需要添加readme-tree功能的仓库的README.md:(位置可自定义)
+```
+<!-- readme-tree start -->
+<!-- readme-tree end -->
+```
+2.在仓库中创建一个actions文件，路径为:`.github/workflows/[这里填写一个名字].yml`，内容如下:
+``` yml
+on: [push]
+
+jobs:
+  tree:
+    runs-on: ubuntu-latest
+    name: readme-tree
+    steps:
+      - uses: actions/checkout@v3
+      - name: Tree
+        uses: RavelloH/readme-tree@v1
+      - name: commit
+        continue-on-error: True
+        run: |
+          git init
+          git pull
+          git config --local user.email "actions@github.com"
+          git config --local user.name "github-actions"
+          git add .
+          git commit -m "[Readme-Tree]`date '+%Y-%m-%d %H:%M:%S'`" || exit
+          git status
+          git push -f
+```  
+
+(若不希望仓库贡献者中出现github-action-user，也可以将上述代码中的`actions@github.com`与`github-actions`替换为自己的github邮箱及昵称。)
+
+3.大功告成!如果上述操作顺利完成，每次对仓库进行push后都会触发自动生成。若未出现，请检查仓库的Actions功能是否开启、Actions的令牌(Settings>Actions>General>Workflow permissions)是否设置为读写。
+
+### 详细设置
+#### 管理功能选项
+#### 针对长内容进行隐藏
+
+## 版本
+
+## 贡献&反馈
+
+## LICENCE
+
+
+
+
+
