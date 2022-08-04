@@ -29,10 +29,12 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: rm -rf .git/
+    - name: git ignore
+      run: rm -rf .git/
       shell: bash
       if: ${{ inputs.ignoregit == 'yes' }}
-    - run: |
+    - name: tree working
+      run: |
         if [ ${{inputs.showall}} == 'yes' ];then showall="-a " ;else showall="" ;fi
         if [ ${{inputs.showdirectoryname}} == 'yes' ];then showdirectoryname="-d " ;else showdirectoryname="" ;fi
         if [ ${{inputs.showchangetime}} == 'yes' ];then showchangetime="-D " ;else showchangetime="" ;fi
@@ -41,5 +43,7 @@ runs:
         tree ${showall}${showdirectoryname}${showchangetime}${showsize}${showallname} > ./tree.bak
   
       shell: bash
-    - run: ${{ github.action_path }}/main.py
-      shell: python
+    - name: Add to readme
+      run: python main.py
+    - name: Tree
+      run: tree.sh
