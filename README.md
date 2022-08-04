@@ -4,14 +4,14 @@
 <!-- readme-tree start -->
 ```
 .
-├── [       4096]  .github
-│   └── [       4096]  workflows
-│       └── [        591]  main.yml
-├── [       1339]  README.md
-├── [       4067]  action.yml
-├── [       1677]  main.py
-├── [          0]  tree.bak
-└── [        809]  tree.sh
+├── ./.github
+│   └── ./.github/workflows
+│       └── ./.github/workflows/main.yml
+├── ./README.md
+├── ./action.yml
+├── ./main.py
+├── ./tree.bak
+└── ./tree.sh
 
 2 directories, 6 files
 ```
