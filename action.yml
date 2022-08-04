@@ -45,7 +45,7 @@ runs:
       shell: bash
     - name: Add to readme
       run: python main.py
-      shell: python
+      shell: cmd
     - name: Tree
       run: start tree.sh
       shell: cmd
