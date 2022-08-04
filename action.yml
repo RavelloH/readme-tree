@@ -5,7 +5,7 @@ inputs:
   showall:
     required: false
     description: "Show all files and directories(yes or no)"
-    default: "no"
+    default: "yes"
   showdirectoryname:
     required: false
     description: "Show directory name instead of content(yes or no)"
