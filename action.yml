@@ -39,5 +39,6 @@ runs:
         if [ ${{inputs.ignoregit}} == 'yes' ];then ignoregit="-I \".git\" " ;else ignoregit ="" ;fi
         tree ${showall}${showdirectoryname}${showchangetime}${showsize}${showallname}${ignoregit} > ./tree.bak
         echo "tree ${showall}${showdirectoryname}${showchangetime}${showsize}${showallname}${ignoregit} > ./tree.bak"
+        tree -a -I ".git"
   
       shell: bash
