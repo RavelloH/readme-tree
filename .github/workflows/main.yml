@@ -9,7 +9,7 @@ jobs:
       - name: Tree
         uses: RavelloH/readme-tree@main
         with:
-          showallname: 'yes'
+          showdirectoryname: 'yes'
       - name: commit
         continue-on-error: True
         run: |
