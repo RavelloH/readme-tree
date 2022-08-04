@@ -43,6 +43,3 @@ runs:
         tree ${showall}${showdirectoryname}${showchangetime}${showsize}${showallname} > ./tree.bak
   
       shell: bash
-    - name: Add to readme
-      run: https://github.com/ravelloh/readme-tree/main.py
-      shell: python
