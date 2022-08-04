@@ -211,15 +211,71 @@ jobs:
 
 ### 详细设置
 #### 管理功能选项
+| 功能名             | 描述                            | 可选值  | 默认值  |
+|-------------------|--------------------------------|--------|--------|
+| showall           | 是否展示所有文件及目录             | yes/no | yes    |
+| showdirectoryname | 仅展示文件夹名                    | yes/no | no     |
+| showchangetime    | 显示更改时间(废弃参数，不可用)       | -      | no     |
+| showsize          | 以kb为单位，显示文件大小            | yes/no | no     |
+| showallname       | 显示相对路径                      | yes/no | no     |
+| ignoregit         | 隐藏.git文件                     | yes/no | yes    |
+要想单独打开/关闭这些功能，仅需在仓库的yml文件中以with的方式更改。  
+例如，若希望显示文件大小并显示相对路径，并且关闭对.git文件的隐藏，只需这样写:  
+``` yml
+#以上省略......
+    name: readme-tree
+    steps:
+      - uses: actions/checkout@v3
+      - name: Tree
+        uses: RavelloH/readme-tree@v1
+        with:
+          showsize: 'yes'
+          showallname: 'yes'
+          ignoregit: 'no'
+      - name: commit
+        continue-on-error: True
+        run: |
+          git init
+ #以下省略......
+ ```
 #### 针对长内容进行隐藏
+若内容过长，可以在markdown标签中使用` <details>`标签隐藏。 用法如下:
 
+``` html
+ <details> 
+  <summary>显示内容</summary>
+ 这里放置隐藏的内容
+ </details>
+```
+
+效果:
+<details> 
+  <summary>显示内容</summary>
+ 这里放置隐藏的内容
+ </details>
+若需要默认隐藏readme-tree，将[#快速开始](#快速开始)中提到的代码放入文字区域即可。另外，也可以默认显示，并提供隐藏功能:
+
+``` html
+ <details> 
+  <summary>显示/隐藏内容</summary>
+ 这里的内容默认显示
+ </details>
+```
+
+效果:
+<details> 
+  <summary>显示/隐藏内容</summary>
+ 这里的内容默认显示
+ </details>
+ 
 ## 版本
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/ravelloh/readme-tree?label=latest%20%2F%20%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC&style=for-the-badge)
+![GitHub Release Date](https://img.shields.io/github/release-date/RavelloH/readme-tree?style=for-the-badge)
+
+若想进行版本更新，仅需修改yml配置中`RavelloH/readme-tree`中@后面的版本号即可
 
 ## 贡献&反馈
-
+若有任何想法或建议，或者发现了BUG，欢迎您的直接贡献，也欢迎您在这里[提个ISSUE来反馈]()以更好的帮助此项目
 ## LICENCE
-
-
-
-
+![GitHub](https://img.shields.io/github/license/ravelloh/readme-tree?style=for-the-badge)
 
