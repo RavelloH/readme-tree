@@ -25,5 +25,5 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: tree
+    - run: tree -a
       shell: bash
