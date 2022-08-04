@@ -10,3 +10,11 @@ jobs:
         uses: RavelloH/readme-tree@main
         with:
           showall: 'yes'
+      - run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "github-actions"
+          git add -A
+          git commit -m "[Readme-Tree]`date '+%Y-%m-%d %H:%M:%S'`" || exit
+          git status
+          git push -f
+          
