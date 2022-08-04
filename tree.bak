@@ -1,0 +1,70 @@
+.
+├── .git
+│   ├── FETCH_HEAD
+│   ├── HEAD
+│   ├── branches
+│   ├── config
+│   ├── description
+│   ├── hooks
+│   │   ├── applypatch-msg.sample
+│   │   ├── commit-msg.sample
+│   │   ├── fsmonitor-watchman.sample
+│   │   ├── post-update.sample
+│   │   ├── pre-applypatch.sample
+│   │   ├── pre-commit.sample
+│   │   ├── pre-merge-commit.sample
+│   │   ├── pre-push.sample
+│   │   ├── pre-rebase.sample
+│   │   ├── pre-receive.sample
+│   │   ├── prepare-commit-msg.sample
+│   │   ├── push-to-checkout.sample
+│   │   └── update.sample
+│   ├── index
+│   ├── info
+│   │   └── exclude
+│   ├── logs
+│   │   ├── HEAD
+│   │   └── refs
+│   │       ├── heads
+│   │       │   └── main
+│   │       └── remotes
+│   │           └── origin
+│   │               └── main
+│   ├── objects
+│   │   ├── 2e
+│   │   │   ├── 1e70c5a1be71a1bea1e991b9243d8c8b1a9008
+│   │   │   └── e9488cf74c9e634cf4c44af9e74fa9a6bfe399
+│   │   ├── 47
+│   │   │   └── f7fcf50bc55e62873573d575218577639c597a
+│   │   ├── 5f
+│   │   │   └── 14f685ceadda42e32da7c1fc1ab87306c1ad2a
+│   │   ├── 61
+│   │   │   └── 9deb342070f7932899bb6c74500607c0aa9bad
+│   │   ├── 8b
+│   │   │   └── 137891791fe96927ad78e64b0aad7bded08bdc
+│   │   ├── ae
+│   │   │   └── 34893d6b38923a8269cc2664c873f02ebc1f67
+│   │   ├── b1
+│   │   │   └── e4199f1cd69c3bfc87dba42252add9eee5ff50
+│   │   ├── c8
+│   │   │   └── 92a5a896fcd213f5e165c1c40f049f4bdccf1a
+│   │   ├── info
+│   │   └── pack
+│   ├── refs
+│   │   ├── heads
+│   │   │   └── main
+│   │   ├── remotes
+│   │   │   └── origin
+│   │   │       └── main
+│   │   └── tags
+│   └── shallow
+├── .github
+│   └── workflows
+│       └── main.yml
+├── README.md
+├── action.yml
+├── main.py
+├── tree.bak
+└── tree.sh
+
+27 directories, 40 files
