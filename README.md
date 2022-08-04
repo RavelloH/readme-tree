@@ -40,7 +40,9 @@
 ```
 .
 └── .github
-1 directories
+    └── workflows
+    
+2 directories
 ```
 ### 显示文件大小
 ```
