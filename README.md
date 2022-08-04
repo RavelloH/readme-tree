@@ -16,6 +16,16 @@
 ## 效果:
 > 注:以下多种效果可组合使用
 ### 默认
+```
+.
+├── README.md
+├── action.yml
+├── main.py
+├── tree.bak
+└── tree.sh
+
+0 directories, 5 files
+```
 ### 显示所有文件和目录
 ```
 .
