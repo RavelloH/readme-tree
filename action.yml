@@ -44,5 +44,5 @@ runs:
   
       shell: bash
     - name: Add to readme
-      run: print('这tm怎么引用不了仓库里的文件')
+      run: https://github.com/ravelloh/readme-tree/main.py
       shell: python
