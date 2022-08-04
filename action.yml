@@ -39,6 +39,7 @@ runs:
         if (( ${{inputs.showsize}} == 'yes' ));then showsize="-s " ;else showsize="" ;fi
         if (( ${{inputs.showallname}} == 'yes' ));then showallname="-f " ;else showallname="" ;fi
         tree ${showall}${showdirectoryname}${showchangetime}${showsize}${showallname}
+        echo "tree ${showall}${showdirectoryname}${showchangetime}${showsize}${showallname}"
   
       shell: bash
       if: ${{ inputs.showall == 'yes' && inputs.showdirectoryname == 'no' && inputs.showchangetime == 'no' && inputs.showsize == 'no' && inputs.showallname == 'no' }}
