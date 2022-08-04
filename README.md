@@ -7,13 +7,14 @@
 ├── .github
 │   └── workflows
 │       └── main.yml
+├── LICENCE
 ├── README.md
 ├── action.yml
 ├── main.py
 ├── tree.bak
 └── tree.sh
 
-2 directories, 6 files
+2 directories, 7 files
 ```
 <!-- readme-tree end -->
 ## 效果:
