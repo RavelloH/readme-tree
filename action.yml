@@ -36,7 +36,8 @@ runs:
         if [ ${{inputs.showchangetime}} == 'yes' ];then showchangetime="-D " ;else showchangetime="" ;fi
         if [ ${{inputs.showsize}} == 'yes' ];then showsize="-s " ;else showsize="" ;fi
         if [ ${{inputs.showallname}} == 'yes' ];then showallname="-f " ;else showallname="" ;fi
-        if [ ${{inputs.ignoregit}} == 'yes' ];then ignoregit='tree -I ".git" ' ;else ignoregit ="" ;fi
+        if [ ${{inputs.ignoregit}} == 'yes' ];then ignoregit='-I ".git" ' ;else ignoregit ="" ;fi
         tree ${showall}${showdirectoryname}${showchangetime}${showsize}${showallname}${ignoretime} > ./tree.bak
+        echo "tree ${showall}${showdirectoryname}${showchangetime}${showsize}${showallname}${ignoretime} > ./tree.bak"
   
       shell: bash
