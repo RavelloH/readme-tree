@@ -192,7 +192,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Tree
-        uses: RavelloH/readme-tree@v1
+        uses: RavelloH/readme-tree@latest
       - name: commit
         continue-on-error: True
         run: |
@@ -228,7 +228,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Tree
-        uses: RavelloH/readme-tree@v1
+        uses: RavelloH/readme-tree@latest
         with:
           showsize: 'yes'
           showallname: 'yes'
