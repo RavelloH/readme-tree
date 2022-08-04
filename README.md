@@ -4,13 +4,8 @@
 <!-- readme-tree start -->
 ```
 .
-├── README.md
-├── action.yml
-├── main.py
-├── tree.bak
-└── tree.sh
 
-0 directories, 5 files
+0 directories
 ```
 <!-- readme-tree end -->
 ## 效果:
