@@ -257,14 +257,14 @@ jobs:
 若需要默认隐藏readme-tree，将[#快速开始](#快速开始)中提到的代码放入文字区域即可。另外，也可以默认显示，并提供隐藏功能:
 
 ``` html
- <details> 
+ <details open> 
   <summary>显示/隐藏内容</summary>
  这里的内容默认显示
  </details>
 ```
 
 效果:
-<details> 
+<details open> 
   <summary>显示/隐藏内容</summary>
  这里的内容默认显示
  </details>
