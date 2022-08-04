@@ -38,7 +38,7 @@ with open("tree.bak", "r", encoding="utf-8") as f1,open("README.md", "r", encodi
             line2 = file.readline()
             counts2 += 1
     print(counts2)
-    #os.remove("tree.bak")
+    os.remove("tree.bak")
 newcounts = counts-1
 newcounts2= counts2-1
 linelist = []
