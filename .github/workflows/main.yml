@@ -6,14 +6,18 @@ jobs:
     name: readme-tree
     steps:
       - uses: actions/checkout@v3
-      - id: foo
+      - name: Tree
         uses: RavelloH/readme-tree@main
         with:
           showall: 'yes'
-      - run: |
+      - name: commit
+        continue-on-error: True
+        run: |
+          git init
+          git pull
           git config --local user.email "actions@github.com"
           git config --local user.name "github-actions"
-          git add -A
+          git add .
           git commit -m "[Readme-Tree]`date '+%Y-%m-%d %H:%M:%S'`" || exit
           git status
           git push -f
