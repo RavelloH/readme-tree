@@ -13,17 +13,6 @@
 ### 默认
 ```
 .
-├── README.md
-├── action.yml
-├── main.py
-├── tree.bak
-└── tree.sh
-
-0 directories, 5 files
-```
-### 显示所有文件和目录
-```
-.
 ├── .github
 │   └── workflows
 │       └── main.yml
@@ -34,7 +23,23 @@
 
 2 directories, 5 files
 ```
-### 显示目录名
+### 仅显示当前目录中的文件
+```
+.
+├── README.md
+├── action.yml
+├── main.py
+├── tree.bak
+└── tree.sh
+
+0 directories, 5 files
+```
+### 仅显示目录名
+```
+.
+└── .github
+1 directories
+```
 ### 显示更改时间
 ### 显示文件大小
 ### 显示相对路径
