@@ -232,6 +232,8 @@ jobs:
 | showsize          | 以字节为单位，显示文件大小            | yes/no | no     |
 | showallname       | 显示相对路径                      | yes/no | no     |
 | ignoregit         | 隐藏.git文件                     | yes/no | yes    |
+
+  
 要想单独打开/关闭这些功能，仅需在仓库的yml文件中以with的方式更改。  
 例如，若希望显示文件大小并显示相对路径，并且关闭对.git文件的隐藏，只需这样写:  
 ``` yml
@@ -289,10 +291,10 @@ jobs:
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/ravelloh/readme-tree?label=latest%20%2F%20%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC&style=for-the-badge)
 ![GitHub Release Date](https://img.shields.io/github/release-date/RavelloH/readme-tree?style=for-the-badge)
 
-若想进行版本更新，仅需修改yml配置中`RavelloH/readme-tree`中@后面的版本号即可
+若想进行版本更改，仅需修改yml配置中`RavelloH/readme-tree`中@后面的版本号即可。默认为保持最新
 
 ## 贡献&反馈
-若有任何想法或建议，或者发现了BUG，欢迎您的直接贡献，也欢迎您在这里[提个ISSUE来反馈]()以更好的帮助此项目
+若有任何想法或建议，或者发现了BUG，欢迎您的直接贡献，也欢迎您在这里[提个ISSUE来反馈](https://github.com/RavelloH/readme-tree/issues/new)以更好的帮助此项目
 ## LICENCE
 ![GitHub](https://img.shields.io/github/license/ravelloh/readme-tree?style=for-the-badge)  
   
@@ -507,10 +509,10 @@ jobs:
 | ignoregit         | Hide .Git files                     | yes/no | yes    |
 
 
-要想单独打开/关闭这些功能，仅需在仓库的yml文件中以with的方式更改。  
-例如，若希望显示文件大小并显示相对路径，并且关闭对.git文件的隐藏，只需这样写:  
+To turn these functions on / off separately, you only need to change them in the YML file of the warehouse in the way of with.   
+For example, if you want to display the file size and relative path, and turn off hiding the.Git file, just write this:    
 ```diff
-#以上省略......
+#Omitted above......
     name: readme-tree
     steps:
       - uses: actions/checkout@v3
@@ -524,46 +526,49 @@ jobs:
         continue-on-error: True
         run: |
           git init
- #以下省略......
+ #Omitted below......
  ```
-#### 针对长内容进行隐藏
-若内容过长，可以在markdown标签中使用` <details>`标签隐藏。 用法如下:
+#### Hide long content
+If the content is too long, you can hide it with the ` <details>` tag in the markdown tag. The usage is as follows:
 
 ``` html
  <details> 
-  <summary>显示内容</summary>
- 这里放置隐藏的内容
+  <summary>Show</summary>
+  <!-- readme-tree start -->
+  <!-- readme-tree end -->
  </details>
 ```
 
-效果:
+Result:
 <details> 
-  <summary>显示内容</summary>
- 这里放置隐藏的内容
+  <summary>Show</summary>
+ Here is the hidden content
  </details>
-若需要默认隐藏readme-tree，将(#快速开始)中提到的代码放入文字区域即可。另外，也可以默认显示，并提供隐藏功能:
-
+If you need to hide readme tree by default, put the code mentioned in (\quick start) into the text area. In addition, it can also be displayed by default, and the hidden function is provided:  
+   
 ``` html
  <details open> 
-  <summary>显示/隐藏内容</summary>
- 这里的内容默认显示
+  <summary>Show/Hide</summary>
+ <!-- readme-tree start -->
+ <!-- readme-tree end -->
  </details>
 ```
 
-效果:
+Result:
 <details open> 
-  <summary>显示/隐藏内容</summary>
- 这里的内容默认显示
+  <summary>Show/Hide</summary>
+ The content here is displayed by default
  </details>
  
-## 版本
+## Version
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/ravelloh/readme-tree?label=latest%20%2F%20%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC&style=for-the-badge)
 ![GitHub Release Date](https://img.shields.io/github/release-date/RavelloH/readme-tree?style=for-the-badge)
 
-若想进行版本更新，仅需修改yml配置中`RavelloH/readme-tree`中@后面的版本号即可
+If you want to make a version change, you only need to modify the version number after @ in 'ravelloh / readme tree' in YML configuration. The default is to keep it up to date
 
-## 贡献&反馈
-若有任何想法或建议，或者发现了BUG，欢迎您的直接贡献，也欢迎您在这里[提个ISSUE来反馈]()以更好的帮助此项目
+## Contribution & feedback
+If you have any ideas or suggestions, or find bugs, you are welcome to contribute directly, and you are also welcome to [put forward an issue for feedback](https://github.com/RavelloH/readme-tree/issues/new) here to better help this project
+
 ## LICENCE
 ![GitHub](https://img.shields.io/github/license/ravelloh/readme-tree?style=for-the-badge)
 
