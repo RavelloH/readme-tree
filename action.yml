@@ -1,7 +1,8 @@
 name: "Readme Tree"
 description: "Automatically add the file structure tree to the corresponding position of your readme document."
 author: "RavelloH"
-icon: list
+icon: "list"
+color: "blue"
 inputs:
   showall:
     required: false
