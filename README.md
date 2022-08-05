@@ -21,7 +21,6 @@ Use GitHub actions to automatically add a tree view for the readme document of t
 ├── tree.bak
 └── tree.sh
 
-展示
 2 directories, 7 files
 ```
 <!-- readme-tree end -->
