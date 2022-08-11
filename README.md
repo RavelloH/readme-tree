@@ -287,6 +287,23 @@ jobs:
  这里的内容默认显示
  </details>
  
+### 撤销
+只需在yml文件中这样修改，就可以清除生成的树状图：
+```diff
+#Omitted above......
+    name: readme-tree
+    steps:
+      - uses: actions/checkout@v3
+      - name: Tree
+-        uses: RavelloH/readme-tree@latest
++        uses: RavelloH/readme-tree-undo@latest
+      - name: commit
+        continue-on-error: True
+        run: |
+          git init
+ #Omitted below......
+```
+在 [readme-tree-undo](https://github.com/RavelloH/readme-tree-undo) 中查看详情。
 ## 版本
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/ravelloh/readme-tree?label=latest%20%2F%20%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC&style=for-the-badge)
 ![GitHub Release Date](https://img.shields.io/github/release-date/RavelloH/readme-tree?style=for-the-badge)
@@ -559,7 +576,25 @@ Result:
   <summary>Show/Hide</summary>
  The content here is displayed by default
  </details>
- 
+
+### Undo
+Simply modify it in the YML file to clear the generated tree view:
+```diff
+#Omitted above......
+    name: readme-tree
+    steps:
+      - uses: actions/checkout@v3
+      - name: Tree
+-        uses: RavelloH/readme-tree@latest
++        uses: RavelloH/readme-tree-undo@latest
+      - name: commit
+        continue-on-error: True
+        run: |
+          git init
+ #Omitted below......
+```
+View more on [readme-tree-undo](https://github.com/RavelloH/readme-tree-undo)
+
 ## Version
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/ravelloh/readme-tree?label=latest%20%2F%20%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC&style=for-the-badge)
 ![GitHub Release Date](https://img.shields.io/github/release-date/RavelloH/readme-tree?style=for-the-badge)
